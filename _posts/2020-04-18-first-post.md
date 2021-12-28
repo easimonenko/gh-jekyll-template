@@ -6,4 +6,8 @@ category: Some Category
 tags: [First Tag, Second Tag]
 ---
 
+Lead of first post.
+
+<!-- end-of-lead -->
+
 Post content here.
