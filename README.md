@@ -4,11 +4,28 @@ This template configured to use with GitHub Pages.
 
 ## Previously
 
-- Install Ruby <https://www.ruby-lang.org>.
+- Install Ruby <https://www.ruby-lang.org>:
+
+  ``` shell
+  sudo apt install ruby ruby-dev
+  ```
+
+- Setting up Ruby: add to .profile:
+
+  ``` plain
+  if [ -d "$HOME/.local/share/gem/ruby/2.7.0" ] ; then
+    RUBY_PATH="$HOME/.local/share/gem/ruby/2.7.0"
+    export RUBY_PATH
+    GEM_HOME="$RUBY_PATH"
+    export GEM_HOME
+    PATH="$RUBY_PATH/bin:$PATH"
+  fi
+  ```
+
 - Install Ruby gems `bundler` and `jekyll`:
 
   ``` shell
-  gem install bundler jekyll
+  gem install bundler jekyll --user-install
   ```
 
 ## Configuration
@@ -22,14 +39,21 @@ Edit this files:
 ## Building
 
 ``` shell
-bundler install
-bundler exec jekyll build
+bundle install
+bundle exec jekyll build
 ```
 
 ## Preview
 
 ``` shell
-bundler exec jekyll serve --incremental --livereload
+bundle exec jekyll serve --incremental --livereload
+```
+
+## Updating
+
+``` shell
+bundle outdated
+bundle update
 ```
 
 ## Posts adding
