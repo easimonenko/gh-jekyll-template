@@ -30,6 +30,13 @@
 			   {% endif %}>Blog
 			</a>
 		    </li>
+                    <li>
+			<a href="/projects"
+			   {% if page.url contains "/projects" %}
+			   class="current-part"
+			   {% endif %}>Projects
+			</a>
+		    </li>
 		    <li>
 			<a href="/about"
 			   {% if page.url contains "/about" %}
