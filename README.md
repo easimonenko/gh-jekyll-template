@@ -53,25 +53,30 @@ bundle exec jekyll serve --incremental --livereload
 
 ``` shell
 bundle outdated
-bundle update
+bundle update github-pages
 ```
 
 ## Posts adding
 
-- Open folder `_posts` and add into her a new file by sample.
-- Then remember to remove these examples.
+- Open folder `_posts` and add a new file into her by sample.
+- Then don't forget to remove these examples.
 
 ## Tags adding
 
-- Open folder `tags` and add into her a new folder in slug name format and put into
-  her `index.html` by sample.
-- Then remember to remove these examples.
+- Open folder `tags` and add a new folder into her in slug name format
+  and put `index.html` into her by sample.
+- Then don't forget to remove these examples.
 
 ## Categories adding
 
-- Open folder `categories` and add into her a new folder in slug name format and
-  put into her `index.html` by sample.
-- Then remember to remove these examples.
+- Open the folder `categories` and add a new folder into her in slug name format
+  and put `index.html` into her by sample.
+- Then don't forget to remove these examples.
+
+## Projects adding
+
+- Open the folder `_projects` and add a new file into her by sample.
+- Then don't forget to remove these examples.
 
 ## What's next?
 
