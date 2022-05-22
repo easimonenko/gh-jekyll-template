@@ -27,8 +27,8 @@ It supports:
 - Setting up Ruby: add to .profile:
 
   ``` plain
-  if [ -d "$HOME/.local/share/gem/ruby/2.7.0" ] ; then
-    RUBY_PATH="$HOME/.local/share/gem/ruby/2.7.0"
+  if [ -d "$HOME/.local/share/gem/ruby/3.0.0" ] ; then
+    RUBY_PATH="$HOME/.local/share/gem/ruby/3.0.0"
     export RUBY_PATH
     GEM_HOME="$RUBY_PATH"
     export GEM_HOME
