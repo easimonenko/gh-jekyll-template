@@ -10,5 +10,11 @@ layout: default
 	    {{page.link}}
 	</a>
     </p>
+    {% if page.status %}
+    &nbsp;|&nbsp;<em>Status</em>: {{page.status | capitalize}}
+    {% endif %}
+    {% if page.updating_date %}
+    &nbsp;|&nbsp;<em>Updated</em>: {{page.updating_date | date_to_string}}
+    {% endif %}
     {{content}}
 </article>
