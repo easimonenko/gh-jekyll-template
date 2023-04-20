@@ -110,6 +110,10 @@ bundle update github-pages
 - For project page use `project` layout.
 - Categories and tags are not applicable for projects. (Is it necessary?)
 
+## Jekyll Compose
+
+You can also use [Jekyll Compose](https://github.com/jekyll/jekyll-compose).
+
 ## What's next?
 
 Read the [Jekyll documentation](https://jekyllrb.com/docs/) and check with
