@@ -26,3 +26,26 @@ exclude:
   - Gemfile.lock
   - "*~"
   - ".#*"
+jekyll_compose:
+  default_front_matter:
+    drafts:
+      layout: post
+      author: Author Name
+      email: your@email
+      category:
+      tags:
+    posts:
+      layout: post
+      author: Author Name
+      email: your@email
+      category:
+      tags:
+    projects:
+      layout: project
+      title:
+      name:
+      link:
+      short:
+      author: Author Name
+      date:
+      status:
