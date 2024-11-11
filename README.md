@@ -16,7 +16,12 @@ It supports:
   ![Tag Page Screenshot](docs/tag-page.png)
 - About page.
 
+Copying contents of this repository. No need to clone or fork it!
+Unless of course you are going to improve this template and make a pull request.
+
 ## Previously
+
+### In Ubuntu Linux with APT
 
 - Install Ruby <https://www.ruby-lang.org>:
 
@@ -41,9 +46,25 @@ It supports:
   ``` shell
   gem install bundler jekyll --user-install
   ```
+### In Ubuntu Linux with SNAP
 
-- Copying contents of this repository. No need to clone or fork it!
-  Unless of course you are going to improve this template and make a pull request.
+- Install Ruby <https://www.ruby-lang.org>:
+
+  ``` shell
+  sudo snap install ruby --classic
+  ```
+
+- Install Make for building native bundles:
+
+  ``` shell
+  sudo apt install make g++
+  ```
+
+### In Fedora Linux with DNF
+
+``` shell
+sudo dnf install ruby ruby-devel
+```
 
 ## Configuring
 
@@ -123,4 +144,4 @@ Read the [Jekyll documentation](https://jekyllrb.com/docs/) and check with
 
 (CC)(0)
 
-(c) Evgeny Simonenko, 2020-2022
+(c) Evgeny Simonenko, 2020-2024
