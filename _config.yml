@@ -26,6 +26,7 @@ exclude:
   - Gemfile.lock
   - "*~"
   - ".#*"
+  - vendor
 jekyll_compose:
   default_front_matter:
     drafts:
