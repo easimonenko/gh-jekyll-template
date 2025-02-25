@@ -43,10 +43,8 @@ jekyll_compose:
       tags:
     projects:
       layout: project
-      title:
       name:
       link:
       short:
       author: Author Name
-      date:
       status:
