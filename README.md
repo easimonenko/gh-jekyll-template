@@ -21,6 +21,31 @@ Unless of course you are going to improve this template and make a pull request.
 
 ## Previously
 
+### In GNU/Linux with rbenv
+
+- Install [rbenv](https://rbenv.org/) from sources:
+
+  ``` shell
+  git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+  ~/.rbenv/bin/rbenv init
+  ```
+
+- Install [ruby-build](https://github.com/rbenv/ruby-build):
+
+  ``` shell
+  git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
+  ```
+
+- Build and install latest Ruby:
+
+  ``` shell
+  rbenv install --list
+  rbenv install 3.4.5
+  rbenv global 3.4.5
+  ```
+
+**Note** You will probably need to install the build tools and libraries. Be guided by the messages issued during the building process.
+
 ### In Ubuntu Linux with APT
 
 - Install Ruby <https://www.ruby-lang.org>:
