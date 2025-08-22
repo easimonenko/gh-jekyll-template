@@ -44,7 +44,7 @@ Unless of course you are going to improve this template and make a pull request.
   rbenv global 3.4.5
   ```
 
-**Note** You will probably need to install the build tools and libraries. Be guided by the messages issued during the building process.
+**Note** You will probably need to install the build tools and libraries. Be guided by the messages issued during the building process. On Ubuntu Linux install following packages: `build-essential`, `pkg-config`, `zlib1g-dev`, `libffi-dev`, `libyaml-dev`.
 
 ### In Ubuntu Linux with APT
 
@@ -169,4 +169,4 @@ Read the [Jekyll documentation](https://jekyllrb.com/docs/) and check with
 
 (CC)(0)
 
-(c) Evgeny Simonenko, 2020-2024
+(c) Evgeny Simonenko, 2020-2025
