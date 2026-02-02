@@ -4,31 +4,35 @@ title: Home
 project-list-limit: 3
 post-list-limit: 7
 ---
-<h1>Projects</h1>
+<section>
+  <h1>Projects</h1>
 
-<ul class="projects">
+  <ul class="projects">
     {% assign projects = site.projects | sort: "date" | reverse %}
     {% for project in projects limit: page.project-list-limit %}
     {% include project-list-item.html %}
     {% endfor %}
-</ul>
+  </ul>
 
-<p><strong><a href="/projects">All {{site.projects | size}} projects &#9658;</a></strong></p>
+  <p><strong><a href="/projects">All {{site.projects | size}} projects &#9658;</a></strong></p>
+</section>
+<section>
+  <h1>Posts</h1>
 
-<h1>Posts</h1>
-
-<ul class="posts">
+  <ul class="posts">
     {% for post in site.posts limit:page.post-list-limit %}
-      {% include post-list-item.html %}
+    {% include post-list-item.html %}
     {% endfor %}
-</ul>
+  </ul>
 
-<p><strong><a href="/blog">All {{site.posts | size}} posts &#9658;</a></strong></p>
+  <p><strong><a href="/blog">All {{site.posts | size}} posts &#9658;</a></strong></p>
+</section>
+<section>
+  <h1>Categories</h1>
 
-<h1>Categories</h1>
+  {% include category-list.html %}
 
-{% include category-list.html %}
+  <h1>Tags</h1>
 
-<h1>Tags</h1>
-
-{% include tag-list.html %}
+  {% include tag-list.html %}
+</section>
